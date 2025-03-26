@@ -44,6 +44,13 @@ export default function page() {
       description:
         "Built innovative solutions during a competitive hackathon, leveraging design and development skills to achieve functional outcomes.",
     },
+    {
+      id: 4,
+      title: "React/Next.js Developer",
+      year: "2025 - Present",
+      description:
+        "Contributed to 4+ projects, building and optimizing web applications with modern front-end technologies.",
+    },
   ];
 
   return (
@@ -142,7 +149,7 @@ export default function page() {
               <div className="skill-progress-bg">
                 <div
                   className="skill-progress-fill"
-                  style={{ width: "85%" }}
+                  style={{ width: "95%" }}
                 ></div>
               </div>
             </li>

@@ -69,7 +69,7 @@ export default function Page() {
       name: "Poet Website for Shayar Varun Anand",
       img: "/images/Live-project.jpg", // Replace with actual image path
       "image-alt": "Poet Website",
-      link: "www.varunanand.in",
+      link: "https://www.varunanand.in",
     },
     {
       id: 9,
