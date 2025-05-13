@@ -15,6 +15,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 105946.png", // Replace with actual image path
       "image-alt": "Steelmans public School website",
       link: "https://steelmansschool.com/",
+      code: "",
     },
     {
       id: 1,
@@ -23,6 +24,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 104735.png", // Replace with actual image path
       "image-alt": "Your lie in april tribute website",
       link: "https://your-lie-in-april.vercel.app/",
+      code: "",
     },
     {
       id: 2,
@@ -31,6 +33,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 104906.png", // Replace with actual image path
       "image-alt": "Season based Anime Recommendation",
       link: "https://season-based-anime-recommendation.vercel.app/",
+      code: "",
     },
     {
       id: 3,
@@ -39,6 +42,7 @@ export default function Page() {
       img: "/images/image.png", // Replace with actual image path
       "image-alt": "Reimagination Hackathon",
       link: "https://code-x-reimagine-hackathon-round-1.vercel.app/",
+      code: "",
     },
     {
       id: 4,
@@ -47,6 +51,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 102655.png", // Replace with actual image path
       "image-alt": "Spotify Clone",
       link: "https://spotify-clone-iota-sand.vercel.app/",
+      code: "",
     },
     {
       id: 5,
@@ -55,6 +60,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 102827.png", // Replace with actual image path
       "image-alt": "Portfolio Website",
       link: "/",
+      code: "",
     },
     {
       id: 6,
@@ -63,6 +69,7 @@ export default function Page() {
       img: "/images/pokemon.png", // Replace with actual image path
       "image-alt": "Pokémon Search App",
       link: "https://anmolashish.github.io/Pokemon-Search/",
+      code: "",
     },
     {
       id: 7,
@@ -71,6 +78,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 103048.png", // Replace with actual image path
       "image-alt": "Weather App",
       link: "https://anmolashish.github.io/Weather-website/",
+      code: "",
     },
     {
       id: 8,
@@ -79,6 +87,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 103150.png", // Replace with actual image path
       "image-alt": "Poet Website",
       link: "https://www.varunanand.in",
+      code: "",
     },
     {
       id: 9,
@@ -87,6 +96,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 103255.png", // Replace with actual image path
       "image-alt": "Reimagination Hackathon",
       link: "https://codex-reimgination-hackthon-round-2.vercel.app/",
+      code: "",
     },
     {
       id: 11,
@@ -95,6 +105,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 110104.png", // Replace with actual image path
       "image-alt": "Steelmans gears website",
       link: "https://steelmansgears.com/",
+      code: "",
     },
     {
       id: 12,
@@ -103,6 +114,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 110349.png", // Replace with actual image path
       "image-alt": "The gear Edges website",
       link: "https://www.thegearedges.com/",
+      code: "",
     },
     {
       id: 13,
@@ -111,6 +123,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 110638.png", // Replace with actual image path
       "image-alt": "Solitare infosys redesign (prototype)",
       link: "https://solitaire-infosys.vercel.app/",
+      code: "",
     },
     {
       id: 14,
@@ -119,6 +132,7 @@ export default function Page() {
       img: "/images/Screenshot 2025-05-13 110926.png", // Replace with actual image path
       "image-alt": "Steelmans Gears V1",
       link: "https://solitaire-infosys.vercel.app/",
+      code: "",
     },
   ];
 
@@ -158,25 +172,27 @@ export default function Page() {
               key={element.id}
             >
               <div className="project-wrapper">
-                <figure className="project-img">
+                <div className="project-img">
                   <div className="project-hover-overlay">
-                    {element.demoLink && (
+                    {element.link && (
                       <a
-                        href={element.demoLink}
+                        href={element.link}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="project-link"
+                        onClick={(e) => e.stopPropagation()}
                       >
                         <FiExternalLink />
                         <span>View Demo</span>
                       </a>
                     )}
-                    {element.codeLink && (
+                    {element.code && (
                       <a
-                        href={element.codeLink}
+                        href={element.code}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="project-link"
+                        onClick={(e) => e.stopPropagation()}
                       >
                         <IoCodeSlashOutline />
                         <span>View Code</span>
@@ -190,7 +206,7 @@ export default function Page() {
                     width={500}
                     height={500}
                   />
-                </figure>
+                </div>
 
                 <h3 className="project-title">{element.name}</h3>
                 <p className="project-category">{element.category}</p>

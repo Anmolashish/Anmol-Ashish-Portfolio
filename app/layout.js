@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
                   Anmol Ashish
                 </h1>
 
-                <p className="title">Web developer</p>
+                <p className="title">Frontend Developer</p>
               </div>
 
               <button
