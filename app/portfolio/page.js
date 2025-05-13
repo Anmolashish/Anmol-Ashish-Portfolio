@@ -12,7 +12,7 @@ export default function Page() {
       id: 10,
       category: "Live Project",
       name: "Steelmans public School website",
-      img: "/Images/Screenshot 2025-05-13 105946.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 105946.png", // Replace with actual image path
       "image-alt": "Steelmans public School website",
       link: "https://steelmansschool.com/",
     },
@@ -20,7 +20,7 @@ export default function Page() {
       id: 1,
       category: "Hackathon",
       name: "Your lie in april Tribute website",
-      img: "/Images/Screenshot 2025-05-13 104735.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 104735.png", // Replace with actual image path
       "image-alt": "Your lie in april tribute website",
       link: "https://your-lie-in-april.vercel.app/",
     },
@@ -28,7 +28,7 @@ export default function Page() {
       id: 2,
       category: "Hackathon",
       name: "Season based Anime Recommendation",
-      img: "/Images/Screenshot 2025-05-13 104906.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 104906.png", // Replace with actual image path
       "image-alt": "Season based Anime Recommendation",
       link: "https://season-based-anime-recommendation.vercel.app/",
     },
@@ -36,7 +36,7 @@ export default function Page() {
       id: 3,
       category: "Hackathon",
       name: "Reimagination Hackathon round 1 (ZOA Drinks)",
-      img: "/Images/image.png", // Replace with actual image path
+      img: "/images/image.png", // Replace with actual image path
       "image-alt": "Reimagination Hackathon",
       link: "https://code-x-reimagine-hackathon-round-1.vercel.app/",
     },
@@ -44,7 +44,7 @@ export default function Page() {
       id: 4,
       category: "Web development",
       name: "Spotify Clone",
-      img: "/Images/Screenshot 2025-05-13 102655.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 102655.png", // Replace with actual image path
       "image-alt": "Spotify Clone",
       link: "https://spotify-clone-iota-sand.vercel.app/",
     },
@@ -52,7 +52,7 @@ export default function Page() {
       id: 5,
       category: "Web development",
       name: "Portfolio Website",
-      img: "/Images/Screenshot 2025-05-13 102827.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 102827.png", // Replace with actual image path
       "image-alt": "Portfolio Website",
       link: "/",
     },
@@ -60,7 +60,7 @@ export default function Page() {
       id: 6,
       category: "Web development",
       name: "Pokémon Search App",
-      img: "/Images/pokemon.png", // Replace with actual image path
+      img: "/images/pokemon.png", // Replace with actual image path
       "image-alt": "Pokémon Search App",
       link: "https://anmolashish.github.io/Pokemon-Search/",
     },
@@ -68,7 +68,7 @@ export default function Page() {
       id: 7,
       category: "Web development",
       name: "Weather App",
-      img: "/Images/Screenshot 2025-05-13 103048.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 103048.png", // Replace with actual image path
       "image-alt": "Weather App",
       link: "https://anmolashish.github.io/Weather-website/",
     },
@@ -76,7 +76,7 @@ export default function Page() {
       id: 8,
       category: "Live Project",
       name: "Poet Website for Shayar Varun Anand",
-      img: "/Images/Screenshot 2025-05-13 103150.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 103150.png", // Replace with actual image path
       "image-alt": "Poet Website",
       link: "https://www.varunanand.in",
     },
@@ -84,7 +84,7 @@ export default function Page() {
       id: 9,
       category: "Hackathon",
       name: "Reimagination Hackathon round 2 (Herbalife)",
-      img: "/Images/Screenshot 2025-05-13 103255.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 103255.png", // Replace with actual image path
       "image-alt": "Reimagination Hackathon",
       link: "https://codex-reimgination-hackthon-round-2.vercel.app/",
     },
@@ -92,7 +92,7 @@ export default function Page() {
       id: 11,
       category: "Live Project",
       name: "Steelmans gears website",
-      img: "/Images/Screenshot 2025-05-13 110104.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 110104.png", // Replace with actual image path
       "image-alt": "Steelmans gears website",
       link: "https://steelmansgears.com/",
     },
@@ -100,7 +100,7 @@ export default function Page() {
       id: 12,
       category: "Live Project",
       name: "The gear Edges website",
-      img: "/Images/Screenshot 2025-05-13 110349.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 110349.png", // Replace with actual image path
       "image-alt": "The gear Edges website",
       link: "https://www.thegearedges.com/",
     },
@@ -108,7 +108,7 @@ export default function Page() {
       id: 13,
       category: "Web development",
       name: "Solitare infosys redesign (prototype)",
-      img: "/Images/Screenshot 2025-05-13 110638.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 110638.png", // Replace with actual image path
       "image-alt": "Solitare infosys redesign (prototype)",
       link: "https://solitaire-infosys.vercel.app/",
     },
@@ -116,7 +116,7 @@ export default function Page() {
       id: 14,
       category: "Web development",
       name: "Steelmans Gears V1",
-      img: "/Images/Screenshot 2025-05-13 110926.png", // Replace with actual image path
+      img: "/images/Screenshot 2025-05-13 110926.png", // Replace with actual image path
       "image-alt": "Steelmans Gears V1",
       link: "https://solitaire-infosys.vercel.app/",
     },
