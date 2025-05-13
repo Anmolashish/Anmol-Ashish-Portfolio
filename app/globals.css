@@ -1,15 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
   /**
    * colors
@@ -2041,4 +2029,49 @@ textarea.form-input::-webkit-resizer {
     aspect-ratio: 1 / 1; /* Ensures a square aspect ratio */
     object-fit: cover; /* Ensures the image is cropped properly if needed */
   }
+}
+
+.project-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.project-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-item:hover .project-hover-overlay {
+  opacity: 1;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.project-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-link svg {
+  font-size: 1.5rem;
 }

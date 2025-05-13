@@ -24,23 +24,9 @@ export default function page() {
 
   const timelineData = [
     {
-      id: 1,
-      title: "Live Project",
-      year: "2024",
-      description:
-        "Led the development of a poet website for Shayar Varun Anand using Next.js, React, and Node.js, ensuring dynamic content rendering, responsive design, and optimized performance.",
-    },
-    {
-      id: 2,
-      title: "Trainee at Elleen Infotech",
-      year: "2023",
-      description:
-        "Acquired essential web development skills by actively contributing to team projects and completing 5+ modules in HTML, CSS, and JavaScript during a one-month training program.",
-    },
-    {
-      id: 3,
-      title: "Reimagination Hackathon",
-      year: "2024",
+      id: 5,
+      title: "Skillvarz Hackathon",
+      year: "2025",
       description:
         "Built innovative solutions during a competitive hackathon, leveraging design and development skills to achieve functional outcomes.",
     },
@@ -50,6 +36,80 @@ export default function page() {
       year: "2025 - Present",
       description:
         "Contributed to 4+ projects, building and optimizing web applications with modern front-end technologies.",
+    },
+    {
+      id: 1,
+      title: "Varun Anand Portfolio (Live Project)",
+      year: "2024",
+      description:
+        "Led the development of a poet website for Shayar Varun Anand using Next.js, React, and MongoDB, ensuring dynamic content rendering, responsive design, and optimized performance.",
+    },
+    {
+      id: 3,
+      title: "Reimagination Hackathon",
+      year: "2024",
+      description:
+        "Built innovative solutions during a competitive hackathon, leveraging design and development skills to achieve functional outcomes.",
+    },
+    {
+      id: 2,
+      title: "Trainee at Elleen Infotech",
+      year: "2023",
+      description:
+        "Acquired essential web development skills by actively contributing to team projects and completing 5+ modules in HTML, CSS, and JavaScript during a one-month training program.",
+    },
+  ];
+
+  const skillsData = [
+    {
+      id: 1,
+      name: "HTML",
+      percentage: 95,
+    },
+    {
+      id: 5,
+      name: "CSS",
+      percentage: 95,
+    },
+    {
+      id: 2,
+      name: "JavaScript",
+      percentage: 90,
+    },
+    {
+      id: 3,
+      name: "React JS",
+      percentage: 85,
+    },
+    {
+      id: 6,
+      name: "Next JS",
+      percentage: 75,
+    },
+    {
+      id: 4,
+      name: "REST APIs",
+      percentage: 65,
+    },
+    {
+      id: 7,
+      name: "Bootstrap",
+      percentage: 85,
+    },
+    {
+      id: 8,
+      name: "Tailwind",
+      percentage: 95,
+    },
+    {
+      id: 9,
+      name: "Flask",
+      percentage: 55,
+    },
+    {
+      id: 10,
+      name: "Git",
+      percentage: 95,
     },
   ];
 
@@ -90,7 +150,7 @@ export default function page() {
               <IoBookOutline />
             </div>
 
-            <h3 className="h3">Achievements</h3>
+            <h3 className="h3">Experiences</h3>
           </div>
 
           <ol className="timeline-list">
@@ -112,61 +172,21 @@ export default function page() {
           <h3 className="h3 skills-title">My Skills</h3>
 
           <ul className="skills-list content-card">
-            <li className="skills-item">
-              <div className="title-wrapper">
-                <h5 className="h5">HTML/CSS</h5>
-                <data value="95">95%</data>
-              </div>
+            {skillsData.map((skill) => (
+              <li className="skills-item" key={skill.id}>
+                <div className="title-wrapper">
+                  <h5 className="h5">{skill.name}</h5>
+                  <data value={skill.percentage}>{skill.percentage}%</data>
+                </div>
 
-              <div className="skill-progress-bg">
-                <div
-                  className="skill-progress-fill"
-                  style={{ width: "95%" }}
-                ></div>
-              </div>
-            </li>
-
-            <li className="skills-item">
-              <div className="title-wrapper">
-                <h5 className="h5">JavaScript</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div className="skill-progress-bg">
-                <div
-                  className="skill-progress-fill"
-                  style={{ width: "90%" }}
-                ></div>
-              </div>
-            </li>
-
-            <li className="skills-item">
-              <div className="title-wrapper">
-                <h5 className="h5">React & Next.js</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div className="skill-progress-bg">
-                <div
-                  className="skill-progress-fill"
-                  style={{ width: "95%" }}
-                ></div>
-              </div>
-            </li>
-
-            <li className="skills-item">
-              <div className="title-wrapper">
-                <h5 className="h5">REST APIs</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div className="skill-progress-bg">
-                <div
-                  className="skill-progress-fill"
-                  style={{ width: "75%" }}
-                ></div>
-              </div>
-            </li>
+                <div className="skill-progress-bg">
+                  <div
+                    className="skill-progress-fill"
+                    style={{ width: `${skill.percentage}%` }}
+                  ></div>
+                </div>
+              </li>
+            ))}
           </ul>
         </section>
       </article>
